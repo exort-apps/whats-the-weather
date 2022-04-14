@@ -25,3 +25,31 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+h1.temperature {
+    margin-bottom: 10px;
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+.weather.loading {
+    visibility: hidden;
+    height: 20px;
+    position: relative;
+}
+
+.weather.loading::after{
+    visibility: visible;
+    content: "Loading...";
+    color: azure;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
